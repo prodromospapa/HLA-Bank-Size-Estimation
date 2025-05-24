@@ -35,8 +35,8 @@ if tmp_home:
 split_group = "health_cluster" # group to split the data
 completeness_list = ["full","8/10","9/10"] # completeness of the data, full, 8/10, 9/10
 
-max_size = 2*(10**6) # max size of the data in bytes
-step = max_size//1000
+max_size = 2*(10**6) # max size of the data
+step = max_size//10_000
 loci_all = [5] # loci to use
 if split_group == "health_cluster":
     groups = [[1,2],[3,4],5,6,7] 
